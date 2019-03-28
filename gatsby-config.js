@@ -15,6 +15,7 @@ module.exports = {
         },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
+        `gatsby-transformer-remark`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -26,17 +27,7 @@ module.exports = {
                 display: `minimal-ui`,
                 icon: `src/images/apple-icon.png`, // This path is relative to the root of the site.
             },
-        },
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-                commonmark: true,
-                footnotes: true,
-                pedantic: true,
-                gfm: true,
-                plugins: [],
-            },
-        },
+        }
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // 'gatsby-plugin-offline',
