@@ -16,6 +16,7 @@ export default ({ data }) => {
                         <h3 css={{ marginBottom: `${rhythm(1 / 4)}`}}>
                             {node.frontmatter.title}{" "}
                             <span css={{ color:  `#bbb`}}>— {node.frontmatter.date}</span>
+                            <span>{node.frontmatter.content}</span>
                         </h3>
                         <p>{node.excerpt}</p>
                     </div>
