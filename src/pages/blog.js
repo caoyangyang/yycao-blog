@@ -18,7 +18,10 @@ export default ({ data }) => {
                             <span css={{ color:  `#bbb`}}>— {node.frontmatter.date}</span>
                             <span>{node.frontmatter.content}</span>
                         </h3>
-                        <p>{node.excerpt}</p>
+                        <div
+                            className="blog-post-content"
+                            dangerouslySetInnerHTML={{ __html: node.html }}
+                        />
                     </div>
                 ))}
             </div>
@@ -33,6 +36,7 @@ export const query = graphql`
       edges {
         node {
           id
+          html
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
