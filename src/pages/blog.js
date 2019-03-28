@@ -8,7 +8,7 @@ export default ({ data }) => {
         <Layout>
             <div>
                 <h1 css={{display: `inline-block`,borderBottom: `1px solid`}}>
-                    Amazing Pandas Eating Things
+                    YangyangCAO's blog content
                 </h1>
                 <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
                 {data.allMarkdownRemark.edges.map(({ node }) => (
